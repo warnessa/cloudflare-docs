@@ -146,7 +146,7 @@ In the third-party security product, disable HTTPS inspection and TLS decryption
 
 ### Docker container is failing DNS resolution
 
-If you are using WARP and running a CI/CD pipeline inside a Docker container on Microsoft hardware to provide Github Actions with an egress IP, your container's `/etc/resolv.conf` file might be injecting a [custom nameserver with the IP address `168.63.129.16`](https://learn.microsoft.com/en-us/azure/virtual-network/what-is-ip-address-168-63-129-16) (specific to Azure infrastructure.)
+If you are using WARP and running a CI/CD pipeline inside a Docker container on Microsoft hardware to provide GitHub Actions with an egress IP, your container's `/etc/resolv.conf` file might be injecting a [custom nameserver with the IP address `168.63.129.16`](https://learn.microsoft.com/en-us/azure/virtual-network/what-is-ip-address-168-63-129-16) (specific to Azure infrastructure.)
 The `168.63.129.16` IP address is only accessible to Azure VMs and causes the container's traffic to fail when routed through the Cloudflare WARP tunnel.
 
 #### Solution
