@@ -40,7 +40,7 @@ AI context analysis only supports Gateway HTTP and HTTPS traffic.
 
 AI context analysis uses a pretrained model to analyze and adjust the confidence in a detection based on its surrounding context. DLP will log any matches that are above your confidence threshold.
 
-DLP redacts any matched text then submits the context as an AI text embedding vector to [Cloudflare Workers AI](/workers-ai/). Vectors are stored in customer-specific private namespaces for up to six months, along with hit count and the [false positive/negative report](/cloudflare-one/policies/data-loss-prevention/dlp-policies/logging-options/#report-false-and-true-positives-to-ai-context-analysis).
+DLP redacts any matched text, then submits the context as an AI text embedding vector to [Cloudflare Workers AI](/workers-ai/). Vectors are stored in user-specific private namespaces for up to six months, along with hit count and the [false positive/negative report](/cloudflare-one/policies/data-loss-prevention/dlp-policies/logging-options/#report-false-and-true-positives-to-ai-context-analysis).
 
 To use AI context analysis:
 
@@ -48,8 +48,7 @@ To use AI context analysis:
 2. [Add the profile](/cloudflare-one/policies/data-loss-prevention/dlp-policies/#2-create-a-dlp-policy) to a DLP policy.
 3. When configuring the DLP policy, turn on [payload logging](/cloudflare-one/policies/data-loss-prevention/dlp-policies/logging-options/#log-the-payload-of-matched-rules).
 
-AI context analysis results will appear in the payload section of your [DLP logs](/cloudflare-one/policies/data-loss-prevention/dlp-policies/#4-view-dlp-logs). To improve future detections of sensitive data, you need to [report false and true positives.](/cloudflare-one/policies/data-loss-prevention/dlp-policies/logging-options/#report-false-and-true-positives-to-ai-context-analysis) 
-
+AI context analysis results will appear in the payload section of your [DLP logs](/cloudflare-one/policies/data-loss-prevention/dlp-policies/#4-view-dlp-logs). To improve future detections of sensitive data, you need to [report false and true positives](/cloudflare-one/policies/data-loss-prevention/dlp-policies/logging-options/#report-false-and-true-positives-to-ai-context-analysis).
 
 ### Confidence thresholds
 
