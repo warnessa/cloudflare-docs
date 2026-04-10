@@ -13,4 +13,10 @@ Key changes:
 - **Simplified migration**: Settings enabled on any profile are automatically migrated to account level
 - **Deprecation notice**: Profile-level advanced settings will be deprecated in a future release
 
+**Migration details:**
+
+During the migration period, if a setting is enabled on any profile, it will automatically be enabled at the account level. This means profiles that previously had a setting disabled may now have it enabled if another profile in the account had it enabled.
+
+Settings are evaluated using OR logic - a setting is enabled if it is turned on at either the account level or the profile level. However, profile-level settings cannot be enabled when the account-level setting is off.
+
 For more details, refer to the [DLP advanced settings documentation](/cloudflare-one/data-loss-prevention/dlp-profiles/advanced-settings/).
