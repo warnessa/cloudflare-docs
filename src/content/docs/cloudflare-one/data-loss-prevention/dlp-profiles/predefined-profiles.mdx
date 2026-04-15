@@ -30,7 +30,7 @@ The following secrets are validated with regex.
 - Google Cloud Platform keys
 - SSH keys
 
-The following Cloudflare API credentials are validated using a CRC32 checksum. Only credentials generated after Cloudflare's token format update will be matched by these entries.
+The following Cloudflare API credentials are validated algorithmically using a checksum. Only credentials generated after [Cloudflare's token format update](/fundamentals/api/get-started/token-formats/) will be matched by these entries.
 
 | Detection entry | Format |
 | --- | --- |
