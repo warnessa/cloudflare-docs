@@ -9,7 +9,7 @@ tags:
 
 import { Badge } from "~/components";
 
-DLP settings allow you to configure account-level settings that apply across all DLP profiles and policies. These settings are located in **Data loss prevention** > **DLP settings** in [Cloudflare One](https://one.dash.cloudflare.com/).
+DLP settings allow you to configure account-level settings that apply across all DLP profiles and policies. These settings are located in **Zero Trust** > **Data loss prevention** > **DLP settings** in the [Cloudflare dashboard](https://dash.cloudflare.com/).
 
 ## Optical Character Recognition (OCR)
 
@@ -19,7 +19,7 @@ OCR supports scanning `.jpg`/`.jpeg` and `.png` files between 4 KB and 1 MB in s
 
 To turn on OCR:
 
-1. In [Cloudflare One](https://one.dash.cloudflare.com/), go to **Data loss prevention** > **DLP settings**.
+1. In the [Cloudflare dashboard](https://dash.cloudflare.com/), go to **Zero Trust** > **Data loss prevention** > **DLP settings**.
 2. Turn on **Optical Character Recognition (OCR)**.
 
 ## AI context analysis <Badge text="Beta" variant="caution" size="small" />
@@ -34,7 +34,7 @@ DLP redacts any matched text, then converts the surrounding context into a vecto
 
 To turn on AI context analysis:
 
-1. In [Cloudflare One](https://one.dash.cloudflare.com/), go to **Data loss prevention** > **DLP settings**.
+1. In the [Cloudflare dashboard](https://dash.cloudflare.com/), go to **Zero Trust** > **Data loss prevention** > **DLP settings**.
 2. Turn on **AI context analysis**.
 3. [Add the profile](/cloudflare-one/data-loss-prevention/dlp-policies/#2-create-a-dlp-policy) to a DLP policy.
 4. When configuring the DLP policy, turn on [payload logging](/cloudflare-one/data-loss-prevention/dlp-policies/logging-options/#log-the-payload-of-matched-rules).
@@ -53,7 +53,7 @@ To generate a public/private key pair in the command line, refer to [Generate a 
 
 ### Upload the public key to Cloudflare
 
-1. In [Cloudflare One](https://one.dash.cloudflare.com/), go to **Data loss prevention** > **DLP settings**.
+1. In the [Cloudflare dashboard](https://dash.cloudflare.com/), go to **Zero Trust** > **Data loss prevention** > **DLP settings**.
 2. In the **DLP Payload Encryption public key** field, paste your public key.
 3. Select **Save**.
 
@@ -90,8 +90,8 @@ Profile-level OCR and AI context analysis settings will be deprecated in a futur
 
 To migrate:
 
-1. In [Cloudflare One](https://one.dash.cloudflare.com/), go to **Data loss prevention** > **DLP settings**.
+1. In the [Cloudflare dashboard](https://dash.cloudflare.com/), go to **Zero Trust** > **Data loss prevention** > **DLP settings**.
 2. Turn on **Optical Character Recognition (OCR)** and/or **AI context analysis** as needed.
-3. Go to **Data loss prevention** > **Profiles**.
+3. Go to **Zero Trust** > **Data loss prevention** > **Profiles**.
 4. For each profile with OCR or AI context analysis enabled, edit the profile and turn off the profile-level settings.
 5. Select **Save profile**.
