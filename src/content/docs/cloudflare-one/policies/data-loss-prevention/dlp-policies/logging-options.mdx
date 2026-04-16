@@ -9,23 +9,7 @@ Data Loss Prevention allows you to capture, store, and view the data that trigge
 
 The data that triggers a DLP policy is stored in the portion of the HTTP request known as the payload. Payload logging is especially useful when diagnosing the behavior of DLP policies. Since the values that triggered a rule may contain sensitive data, they are encrypted with a customer-provided public key so that only you can examine them later. The stored data will include a redacted version of the match, plus 75 bytes of additional context on both sides of the match.
 
-## Set a DLP payload encryption public key
-
-Before you begin logging DLP payloads, you will need to set a DLP payload encryption public key.
-
-### Generate a key pair
-
-To generate a public/private key pair in the command line, refer to [these instructions](/waf/managed-rules/payload-logging/command-line/generate-key-pair/).
-
-### Upload the public key to Cloudflare
-
-1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **Network**.
-2. In the **DLP Payload Encryption public key** field, paste your public key.
-3. Select **Save**.
-
-:::note
-The matching private key is required to view logs. If you lose your private key, you will need to [generate](#1-generate-a-key-pair) and [upload](#2-upload-the-public-key-to-cloudflare) a new public key. The payload of new requests will be encrypted with the new public key.
-:::
+Before you begin logging DLP payloads, you will need to [set a DLP payload encryption public key](/cloudflare-one/policies/data-loss-prevention/dlp-settings/#payload-encryption-key). You can also [configure payload log masking](/cloudflare-one/policies/data-loss-prevention/dlp-settings/#payload-log-masking) to control how DLP redacts sensitive data in logs.
 
 ## Log the payload of matched rules
 
@@ -74,7 +58,7 @@ Based on your report, DLP's machine learning will adjust its confidence in futur
 
 - All Cloudflare logs are encrypted at rest. Encrypting the payload content adds a second layer of encryption for the matched values that triggered a DLP rule.
 - Cloudflare cannot decrypt encrypted payloads, since this operation requires your private key. Cloudflare staff will never ask for the private key.
-- DLP will redact all predefined alphanumeric characters in the log. For example, `123-45-6789` will become `XXX-XX-XXXX`.
+- By default, DLP will redact all predefined alphanumeric characters in the log. For example, `123-45-6789` will become `XXX-XX-XXXX`. You can [configure payload log masking](/cloudflare-one/policies/data-loss-prevention/dlp-settings/#payload-log-masking) to change this behavior.
   - You can define sensitive data with [Exact Data Match (EDM)](/cloudflare-one/policies/data-loss-prevention/detection-entries/#exact-data-match). EDM match logs will redact your defined strings.
 
 ## Log generative AI prompt content
