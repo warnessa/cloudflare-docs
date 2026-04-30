@@ -43,7 +43,7 @@ Regular expressions are written in Rust. Cloudflare recommends validating your r
 
 DLP detects UTF-8 characters, which can be up to 4 bytes each. Custom text pattern detections are limited to 1024 bytes in length.
 
-DLP does not support regular expressions with `+` or `*` operators because they are prone to exceeding the length limit. For example, the regex pattern `a+` can detect an infinite number of `a` characters. We recommend using `a{min,max}` instead, such as `a{1,1024}`.
+DLP does not support regular expressions with `+` or `*` operators because they are prone to exceeding the length limit. For example, the regex pattern `a+` can detect an infinite number of `a` characters. Cloudflare recommends using `a{min,max}` instead, such as `a{1,1024}`.
 
 ### Create a pattern entry
 
