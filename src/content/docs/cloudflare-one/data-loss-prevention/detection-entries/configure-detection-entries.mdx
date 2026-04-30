@@ -39,7 +39,7 @@ For a full list, refer to [Predefined detection entries](/cloudflare-one/data-lo
 
 Pattern entries use regular expressions to detect text patterns in scanned content. You can create pattern entries independently of a DLP profile and reuse them across multiple custom profiles.
 
-Regular expressions are written in Rust. We recommend validating your regex with [Rustexp](https://rustexp.lpil.uk/).
+Regular expressions are written in Rust. Cloudflare recommends validating your regex with [Rustexp](https://rustexp.lpil.uk/).
 
 DLP detects UTF-8 characters, which can be up to 4 bytes each. Custom text pattern detections are limited to 1024 bytes in length.
 
