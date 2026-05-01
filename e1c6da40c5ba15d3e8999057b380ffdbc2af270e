@@ -1,0 +1,23 @@
+src/content/changelog/dlp/2026-05-02-data-classification.mdx
+  4bcb106175f46180 1-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.8",
+  "base_commit_sha": "e1c6da40c5ba15d3e8999057b380ffdbc2af270e",
+  "prompts": {
+    "4bcb106175f46180": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_225e1633bffehzZM4319JHRj81",
+        "model": "openai/gpt-5.4"
+      },
+      "human_author": "warnessa",
+      "messages": [],
+      "total_additions": 14,
+      "total_deletions": 0,
+      "accepted_lines": 14,
+      "overriden_lines": 0
+    }
+  }
+}
