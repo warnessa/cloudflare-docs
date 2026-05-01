@@ -1,0 +1,23 @@
+src/content/changelog/dlp/2026-04-30-standalone-predefined-detection-entries.mdx
+  6f1506133f222d1d 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.8",
+  "base_commit_sha": "e48b148e470f095c3711160c247d35ff231982a3",
+  "prompts": {
+    "6f1506133f222d1d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_21bd73fd1ffei6t53q9bSpFdCy",
+        "model": "openai/gpt-5.4"
+      },
+      "human_author": "warnessa",
+      "messages": [],
+      "total_additions": 1,
+      "total_deletions": 1,
+      "accepted_lines": 1,
+      "overriden_lines": 0
+    }
+  }
+}
