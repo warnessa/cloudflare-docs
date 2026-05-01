@@ -1,0 +1,25 @@
+src/content/changelog/dlp/2026-04-30-standalone-predefined-detection-entries.mdx
+  6f1506133f222d1d 1-14
+src/content/docs/cloudflare-one/data-loss-prevention/detection-entries/predefined-detection-entries.mdx
+  6f1506133f222d1d 15,19-97
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.8",
+  "base_commit_sha": "b85f9e1da7cd99aa82aea3e0e72d8557d1bb021d",
+  "prompts": {
+    "6f1506133f222d1d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_21bd73fd1ffei6t53q9bSpFdCy",
+        "model": "openai/gpt-5.4"
+      },
+      "human_author": "warnessa",
+      "messages": [],
+      "total_additions": 94,
+      "total_deletions": 61,
+      "accepted_lines": 94,
+      "overriden_lines": 0
+    }
+  }
+}
