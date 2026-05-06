@@ -1,0 +1,23 @@
+src/content/docs/cloudflare-one/data-loss-prevention/detection-entries/predefined-detection-entries.mdx
+  36e20a663eb69f0c 15,19-28,32-36,38-46,50-54,56-57,61-62,64,66-67,70-72,74-75,78-80,83,86,90-93,95-103,106,108-109,114-123,125-129,134-138,140-142,147,156-157,159,162
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.8",
+  "base_commit_sha": "97a740bc3be6992474df654d05518585772b453e",
+  "prompts": {
+    "36e20a663eb69f0c": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_205c18676ffeU1fNtq3simwcL4",
+        "model": "openai/gpt-5.4"
+      },
+      "human_author": "warnessa",
+      "messages": [],
+      "total_additions": 91,
+      "total_deletions": 5,
+      "accepted_lines": 91,
+      "overriden_lines": 0
+    }
+  }
+}
